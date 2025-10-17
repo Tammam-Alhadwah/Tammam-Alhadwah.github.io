@@ -1,0 +1,68 @@
+/* Global */
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+p {
+    text-shadow: 0 0 2px #00ffff;
+}
+
+
+body {
+    background-color: #0d0d0d;
+    color: #00ffff;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: #00ffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #ff00ff;
+}
+
+main {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+}
+
+/* Section styling for pages */
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
