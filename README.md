@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Legacy Social Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>Legacy Social Software</h1>
+        <p>“Religion was humanity’s first operating system.”</p>
+    </header>
+
+    <nav>
+        <a href="sections/origins.html">Origins</a>
+        <a href="sections/version-history.html">Version History</a>
+        <a href="sections/patch-notes.html">Patch Notes</a>
+        <a href="sections/next-build.html">Next Build</a>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <p>Debugging morality for the next build.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Legacy Social Software</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
