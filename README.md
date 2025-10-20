@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,6 @@
     <title>Tammam Alhadwah | AI Specialist</title>
     <meta name="description" content="Portfolio of Tammam Alhadwah, an AI Specialist with expertise in Deep Learning, Computer Vision, and Natural Language Processing.">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -205,41 +201,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <title>Legacy Social Software</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="particles-js"></div>
-    <header>
-        <h1>Legacy Social Software</h1>
-        <p>“Religion was humanity’s first operating system.”</p>
-    </header>
-
-    <nav>
-        <a href="sections/origins.html">Origins</a>
-        <a href="sections/version-history.html">Version History</a>
-        <a href="sections/patch-notes.html">Patch Notes</a>
-        <a href="sections/next-build.html">Next Build</a>
-    </nav>
-
-    <main>
-        <section id="hero">
-            <p>Debugging morality for the next build.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Legacy Social Software</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
->>>>>>> 397a3a7c65c4a9d6985befa8003d85bbfdd4211a

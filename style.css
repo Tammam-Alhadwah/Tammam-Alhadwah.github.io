@@ -8,12 +8,7 @@
     --heading-color: #ffffff;
     --border-color: #333;
 }
-@font-face {
-    font-family: 'Varnyx'; /* This is the name you'll use to apply the font */
-    src: url('assets/fonts/varnyx-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +20,6 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -41,7 +35,6 @@ body {
 /* style.css */
 
 .section-title {
-    font-family: 'Varnyx', sans-serif; /* <-- ADD THIS LINE */
     font-size: 3rem; /* <-- Adjusted size */
     color: var(--heading-color);
     text-align: center;
@@ -102,7 +95,6 @@ nav {
 /* style.css */
 
 .nav-logo {
-    font-family: 'Varnyx', sans-serif; /* <-- ADD THIS LINE */
     color: var(--heading-color);
     font-size: 2rem; /* <-- Adjusted size */
     font-weight: normal; /* <-- Use normal weight */
@@ -139,7 +131,6 @@ nav {
 }
 
 .hero-content h1 {
-    font-family: 'Varnyx', sans-serif; /* <-- ADD THIS LINE */
     font-size: 5rem; /* Increased size for impact */
     color: var(--heading-color);
     font-weight: normal; /* Custom fonts often don't have weights, so set to normal */
