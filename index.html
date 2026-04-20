@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tammam Alhadwah — AI Engineer</title>
+  <meta name="description" content="AI Engineer working on computer vision, NLP, and on-device model deployment. Based in Syria." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tammam Alhadwah — AI Engineer" />
+  <meta property="og:description" content="Computer vision, NLP, on-device model deployment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tammam-alhadwah.github.io" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Top nav -->
+  <header class="topnav" aria-label="Primary">
+    <a class="topnav__mark" href="#top">
+      <span class="mark__glyph">T<span class="mark__sub">A</span></span>
+      <span class="mark__label">Tammam Alhadwah</span>
+    </a>
+    <nav class="topnav__links">
+      <a href="#currently">Currently</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============= HERO ============= -->
+    <section class="hero">
+      <div class="hero__meta">
+        <span class="meta-label">Portfolio · 2026</span>
+        <span class="meta-dot" aria-hidden="true"></span>
+        <span class="meta-label">As-Suwayda, Syria</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__line">Tammam</span>
+        <span class="hero__line hero__line--italic">Alhadwah</span>
+      </h1>
+
+      <p class="hero__intro">
+        AI Engineer building and deploying deep learning systems across
+        <em>computer vision</em>, <em>natural language</em>, and
+        <em>tabular&nbsp;ML</em> — from training transformers and CNNs in PyTorch
+        to TensorRT-optimised production inference.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="assets/Resume.pdf">
+          <span>Read the CV</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ============= CURRENTLY ============= -->
+    <section class="currently" id="currently">
+      <div class="section-head">
+        <span class="section-num">§ 01</span>
+        <h2 class="section-title">Currently</h2>
+      </div>
+
+      <div class="currently__grid">
+        <div class="currently__role">
+          <div class="role-label">
+            <span class="pulse" aria-hidden="true"></span>
+            <span>Mar&nbsp;2026 — Present</span>
+          </div>
+          <h3 class="role-title">
+            AI Engineer
+            <span class="role-at">at</span>
+            <a class="role-company" href="#" tabindex="-1">code-x.co</a>
+          </h3>
+          <p class="role-place">Remote · Beirut, Lebanon</p>
+        </div>
+
+        <div class="currently__body">
+          <p>
+            Sole AI engineer, owning multiple production-facing ML projects end-to-end —
+            from data and modelling through deployment.
+          </p>
+          <ul class="bullets">
+            <li>
+              <span class="bullet-tag">Proptech</span>
+              Automated valuation models for real-estate listings: price suggestions and
+              comparable-sale analysis, plus NLP pipelines for compliance-document verification.
+            </li>
+            <li>
+              <span class="bullet-tag">LLM R&amp;D</span>
+              Implementing a patented model architecture for a Lebanese research lab focused on
+              underrepresented dialectal NLP; targeting efficient on-device deployment.
+            </li>
+            <li>
+              <span class="bullet-tag">Stack</span>
+              XGBoost / gradient boosting for tabular, transformers for NLP, and optimisation
+              work for edge-device inference.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= WORK ============= -->
+    <section class="work" id="work">
+      <div class="section-head">
+        <span class="section-num">§ 02</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <ol class="projects" role="list">
+
+        <li class="project">
+          <div class="project__num">01</div>
+          <div class="project__head">
+            <h3 class="project__title">Wildfire &amp; Agricultural Monitoring and Response Console</h3>
+            <p class="project__sub">WAMRC · R&amp;D computer vision for drone footage</p>
+          </div>
+          <div class="project__body">
+            <p>
+              AI-based monitoring system for early wildfire and agricultural threat detection. Built a tiny detection
+              transformer with a MobileNet backbone and a hybrid custom transformer encoder, benchmarked against
+              a fine-tuned YOLOv8-Nano on a 21K-image dataset of fire and smoke instances.
+            </p>
+            <p>
+              Tuned aggressively for recall, applied Exponentially Moving Average smoothing to stabilise
+              per-frame predictions, and deployed with TensorRT on NVIDIA GPUs for real-time inference.
+            </p>
+            <div class="project__meta">
+              <span class="stat"><em>~80%</em> mAP</span>
+              <span class="stat"><em>21k</em> images</span>
+            </div>
+          </div>
+          <div class="project__stack">
+            <span>PyTorch Lightning</span><span>Ultralytics</span><span>OpenCV</span><span>TensorRT</span>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project__num">02</div>
+          <div class="project__head">
+            <h3 class="project__title">Automated Laser-Tag Turret with Object Tracking</h3>
+            <p class="project__sub">Robotics + computer vision deployment</p>
+          </div>
+          <div class="project__body">
+            <p>
+              End-to-end automated turret that tracks and follows moving targets for laser-tag
+              gameplay. YOLO11 detection runs against a phone-camera video feed with real-time
+              multi-object tracking, exponential smoothing for movement, and a manual-override
+              keyboard layer.
+            </p>
+            <p>
+              Motion handled by an Arduino motor-control system driving relay actuators, with
+              TensorRT-optimised inference for responsive targeting.
+            </p>
+          </div>
+          <div class="project__stack">
+            <span>Python</span><span>Ultralytics YOLO</span><span>OpenCV</span><span>TensorRT</span><span>Arduino</span>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project__num">03</div>
+          <div class="project__head">
+            <h3 class="project__title">Arabic Talking-Therapy Chatbot</h3>
+            <p class="project__sub">Conversational AI · Arabic-first</p>
+          </div>
+          <div class="project__body">
+            <p>
+              Therapeutic conversational agent for multi-turn dialogue in Arabic. Rather than
+              fine-tuning an existing model, the dialogue architecture was built from scratch —
+              trained with PyTorch Lightning and tuned for empathetic, contextually aware
+              responses in a therapeutic setting.
+            </p>
+          </div>
+          <div class="project__stack">
+            <span>PyTorch</span><span>PyTorch Lightning</span><span>Python</span>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project__num">04</div>
+          <div class="project__head">
+            <h3 class="project__title">Furniture Classification from 3D Point Clouds</h3>
+            <p class="project__sub">3D computer vision with PointNet</p>
+          </div>
+          <div class="project__body">
+            <p>
+              Classifier for LiDAR-like 3D point-cloud representations of furniture.
+              Implemented the PointNet architecture in Keras to handle irregular point-cloud
+              data directly, without voxelisation.
+            </p>
+            <div class="project__meta">
+              <span class="stat"><em>80.4%</em> accuracy</span>
+            </div>
+          </div>
+          <div class="project__stack">
+            <span>TensorFlow</span><span>Keras</span><span>Python</span>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project__num">05</div>
+          <div class="project__head">
+            <h3 class="project__title">Cyberbullying Classification with DistilBERT</h3>
+            <p class="project__sub">NLP classification · noisy-data cleanup</p>
+          </div>
+          <div class="project__body">
+            <p>
+              Cleaned a noisy and mislabeled dataset of ~1,690 social-media comments and
+              messages, then fine-tuned DistilBERT from Hugging Face Transformers to classify
+              cyberbullying and harassment.
+            </p>
+            <div class="project__meta">
+              <span class="stat"><em>95%</em> accuracy</span>
+            </div>
+          </div>
+          <div class="project__stack">
+            <span>Hugging Face</span><span>Pandas</span><span>Python</span>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ============= ABOUT ============= -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="section-num">§ 03</span>
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__col about__col--prose">
+          <p class="dropcap">
+            Computer vision, deep learning, and the part of NLP where models actually have to
+            run on real hardware — that's the intersection I keep coming back to. I like problems
+            where the training curve is only half the story and the other half is making the
+            thing <em>fast</em>, small, and honest about what it doesn't know.
+          </p>
+          <p>
+            Based in As-Suwayda, Syria, where I'm finishing a Bachelor's in IT &amp; Communication
+            Engineering with an AI specialisation at Arab International University. Currently the
+            sole AI engineer at <a href="#currently">code-x.co</a>, working on proptech ML and
+            dialectal-NLP R&amp;D.
+          </p>
+          <p>
+            Outside work: transformer architectures, long-context modelling, and keeping a small
+            CNC machine built out of satellite-dish motors alive.
+          </p>
+        </div>
+
+        <aside class="about__col about__col--side">
+
+          <div class="side-block">
+            <h4 class="side-head">Stack</h4>
+            <dl class="stack-list">
+              <dt>Languages</dt>
+              <dd>Python, JavaScript / TypeScript</dd>
+              <dt>Deep learning</dt>
+              <dd>PyTorch · PyTorch Lightning · TensorFlow · Keras · Hugging Face</dd>
+              <dt>Classical ML</dt>
+              <dd>XGBoost · Scikit-learn · PCA · K-means</dd>
+              <dt>Computer vision</dt>
+              <dd>OpenCV · Ultralytics YOLO · Albumentations · Tesseract</dd>
+              <dt>Inference &amp; serving</dt>
+              <dd>TensorRT · FastAPI · Flask · Transformers.js</dd>
+              <dt>Tools</dt>
+              <dd>Git · GitHub Actions · Colab · Kaggle</dd>
+            </dl>
+          </div>
+
+          <div class="side-block">
+            <h4 class="side-head">Education</h4>
+            <p class="side-text">
+              <strong>B.Eng. Information Technology &amp; Communication (AI Specialisation)</strong><br/>
+              Arab International University — Daraa, Syria<br/>
+              <span class="side-meta">2021 – 2025 (paused), resuming Summer 2026 · Expected 2027</span>
+            </p>
+          </div>
+
+          <div class="side-block">
+            <h4 class="side-head">Recognition</h4>
+            <ul class="side-list">
+              <li>AI for Autonomous Vehicles &amp; Robotics — <span>University of Michigan</span></li>
+              <li>Neural Networks &amp; Deep Learning — <span>DeepLearning.AI</span></li>
+              <li>Deep Learning with PyTorch: Object Localization — <span>Coursera</span></li>
+            </ul>
+          </div>
+
+          <div class="side-block">
+            <h4 class="side-head">Languages</h4>
+            <p class="side-text">Arabic (native) · English (fluent) · German (A1, targeting B1)</p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============= CONTACT ============= -->
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <span class="section-num">§ 04</span>
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+
+      <div class="contact__body">
+        <p class="contact__lede">
+          Open to conversations about AI engineering roles, research collaboration, and
+          interesting CV / NLP problems.
+        </p>
+
+        <ul class="contact__links">
+          <li>
+            <span class="contact__kind">Email</span>
+            <a href="mailto:t.alhadwah@gmail.com">t.alhadwah@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact__kind">GitHub</span>
+            <a href="https://github.com/tammam-alhadwah" target="_blank" rel="noopener">github.com/tammam-alhadwah</a>
+          </li>
+          <li>
+            <span class="contact__kind">CV</span>
+            <a href="assets/Resume.pdf">Download PDF</a>
+          </li>
+          <li>
+            <span class="contact__kind">Phone</span>
+            <a href="tel:+963995797309">+963 995 797 309</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="foot__row">
+      <span>© <span id="year"></span> Tammam Alhadwah</span>
+      <span class="foot__place">As-Suwayda · Syria</span>
+      <span>Set in Instrument Serif &amp; IBM Plex Mono</span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
